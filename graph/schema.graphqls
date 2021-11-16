@@ -1,0 +1,16 @@
+type Creator {
+  name: String!
+  Works: [Crystal]!
+}
+
+type Owner {
+  name: String!
+  Owns: [Crystal]!
+}
+
+type Crystal {
+  id: Int!
+  title: String!
+  Creator: String!
+  Owner: String!
+}
